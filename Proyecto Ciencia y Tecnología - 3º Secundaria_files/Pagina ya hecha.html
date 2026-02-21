@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ciencia y Tecnología - 3º Secundaria</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #F2D661;
+            --accent-color: #0B1FD6;
+            --bg-light: #4A8DD4;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            flex-wrap: wrap;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            scroll-margin-top: 70px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.03);
+        }
+
+        .media-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 15px;
+            background: #eee;
+        }
+
+        .media-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .social-container {
+            text-align: center;
+        }
+
+        .btn-social {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .btn-social:hover {
+            transform: translateY(-3px);
+        }
+
+        .fb { background: #3b5998; }
+        .tt { background: #000; }
+        .ig { background: #E1306C; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--primary-color);
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .navbar a {
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="a.png" alt="Logo">
+    <h1>Feria de Ciencia y Tecnología 2026</h1>
+    <p>Proyecto: <strong>Electrólisis</strong></p>
+    <p>Integrantes:</p>
+    <ul style="list-style:none; padding:0;">
+        <li>Rodrigo Montaño</li>
+        <li>Leonardo Sánchez</li>
+        <li>Karla Romina</li>
+    </ul>
+    <p>3º Secundaria</p>
+</header>
+
+<nav class="navbar">
+    <a href="#nicholson">Nicholson</a>
+    <a href="#electrolisis">Proyecto</a>
+    <a href="#galeria">Galería</a>
+    <a href="#video">Video</a>
+    <a href="#mapa">Ubicación</a>
+    <a href="#contacto">Redes</a>
+</nav>
+
+<div class="container">
+
+    <section id="nicholson">
+        <h2>William Nicholson</h2>
+        <ul>
+            <li>Nació: 1753, Inglaterra</li>
+            <li>Murió: 1815</li>
+            <li>Profesión: Científico, químico y editor</li>
+        </ul>
+        <p>
+            Junto con Anthony Carlisle, realizó en 1800 la primera electrólisis del agua,
+            separándola en hidrógeno y oxígeno usando electricidad.
+        </p>
+    </section>
+
+    <section id="electrolisis">
+        <h2>¿Qué es la Electrólisis?</h2>
+        <p>
+            Es un proceso químico donde la electricidad provoca una reacción
+            que separa una sustancia en componentes más simples.
+            Por ejemplo, el agua se divide en hidrógeno y oxígeno.
+        </p>
+
+        <h3>Objetivos:</h3>
+        <ul>
+            <li>Observar la separación del agua en gases.</li>
+            <li>Comprender el papel del electrolito.</li>
+            <li>Relacionar electricidad con reacciones químicas.</li>
+        </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería del Proyecto</h2>
+        <div class="galeria">
+            <img src="ft10.jpeg" alt="Proceso 1">
+            <img src="ft6.jpeg" alt="Proceso 2">
+            <img src="ft7.jpeg" alt="Proceso 3">
+            <img src="ft8.jpeg" alt="Proceso 4">
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Demostración en Video</h2>
+        <div class="media-container">
+            <iframe 
+                src="https://www.youtube.com/embed/sPhKA4oo8Ks"
+                title="Video demostración electrólisis"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section id="mapa">
+        <h2>Ubicación de la Escuela</h2>
+        <div class="media-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.2783717149505!2d-99.65168032520624!3d19.31372324446739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd89f3c5509321%3A0x843e9da3c1c95e87!2sColegio%20Springfield!5e0!3m2!1ses!2smx!4v1770323366808!5m2!1ses!2smx"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <section id="contacto" class="social-container">
+        <h2>Síguenos en Redes Sociales</h2>
+
+        <a href="https://www.facebook.com/p/Colegio-Springfield-100057488948413/?locale=es_LA" target="_blank" class="btn-social fb">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+
+        <a href="https://www.tiktok.com/@colegiospringfield" target="_blank" class="btn-social tt">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+
+        <a href="https://www.instagram.com/colegio.springfield" target="_blank" class="btn-social ig">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 - Escuela Secundaria Técnica - Proyecto Feria de Ciencias</p>
+</footer>
+
+</body>
+</html>
